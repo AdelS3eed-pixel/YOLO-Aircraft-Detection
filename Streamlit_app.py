@@ -7,7 +7,7 @@ st.title("✈️ Aircraft Type Detection (SAM + FastAPI)")
 
 uploaded_file = st.file_uploader("Upload an aircraft image...", type=["jpg", "jpeg", "png"])
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://seminomadically-diachronic-belia.ngrok-free.dev/predict"
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
